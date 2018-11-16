@@ -1,19 +1,10 @@
 package org.iproduct.iot.demo.resources;
 
-import org.iproduct.iot.demo.udp.EventListener;
-import org.iproduct.iot.demo.udp.UDPChatServer;
-import org.iproduct.iot.demo.udp.UDPServerFactory;
-import org.json.simple.JSONObject;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
 import javax.ws.rs.*;
-import javax.ws.rs.core.Context;
-import javax.ws.rs.core.MediaType;
 import javax.ws.rs.core.Response;
-import javax.ws.rs.sse.OutboundSseEvent;
-import javax.ws.rs.sse.Sse;
-import javax.ws.rs.sse.SseEventSink;
 import java.io.File;
 
 @Path("/")

@@ -1,13 +1,11 @@
 package org.iproduct.iot.demo.udp;
 
-import javax.enterprise.inject.Produces;
-
 public class UDPServerFactory {
-    private static UDPChatServer server;
+    private static UDPServer server;
 
-    public static UDPChatServer getServer() {
+    public static UDPServer getServer() {
         if (server == null) {
-            server = new UDPChatServer();
+            server = new UDPServer();
             server.start();
         }
         return server;

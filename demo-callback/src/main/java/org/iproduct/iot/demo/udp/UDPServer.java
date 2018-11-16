@@ -1,6 +1,6 @@
 package org.iproduct.iot.demo.udp;
 
-// UDPChatServer.java
+// UDPServer.java
 // Chat server using UDP communication protocol. Works with multiple clients.
 // (c) Copyright IPT - Intellectual Products & Technologies Ltd., 2004-2006.
 // All rights reserved. This software program can be compiled and modified only as a part of the 
@@ -18,38 +18,25 @@ package org.iproduct.iot.demo.udp;
 // Technologies Ltd. has been advised of the possibility of such damage. 
 // Contact information: www.iproduct.org, e-mail: office@iproduct.org 
 
-import com.sun.scenario.effect.impl.sw.sse.SSEBlend_ADDPeer;
-import org.glassfish.jersey.media.sse.InboundEvent;
 import org.iproduct.iot.demo.jersey.BootstrapJersey;
-import org.jvnet.hk2.annotations.Service;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
-import javax.annotation.ManagedBean;
-import javax.annotation.PostConstruct;
-import javax.annotation.PreDestroy;
 import javax.enterprise.context.ApplicationScoped;
-import javax.enterprise.inject.Default;
 import javax.enterprise.inject.Model;
-import javax.ws.rs.sse.Sse;
-import javax.ws.rs.sse.SseEvent;
-import javax.ws.rs.sse.SseEventSource;
 import java.io.IOException;
 import java.net.DatagramPacket;
 import java.net.DatagramSocket;
 import java.net.InetAddress;
 import java.net.SocketException;
-import java.util.List;
 import java.util.concurrent.*;
-import java.util.concurrent.atomic.AtomicReference;
-import java.util.function.Consumer;
 
 @ApplicationScoped
 @Model
-public class UDPChatServer implements Runnable {
+public class UDPServer implements Runnable {
     static final int PORT = 4210;
     static final String IP_ADDRESS = "192.168.137.1";
-    private static final Logger log = LoggerFactory.getLogger(BootstrapJersey.class);
+    private static final Logger log = LoggerFactory.getLogger(UDPServer.class);
     private CopyOnWriteArrayList<EventListener<String>> listeners = new CopyOnWriteArrayList<>();
     private byte[] buffer = new byte[2000];
     private DatagramPacket inPacket =
@@ -77,16 +64,6 @@ public class UDPChatServer implements Runnable {
         listeners.remove(listener);
     }
 
-    public void notifyClients(String message, AddressInfo ai) {
-        DatagramPacket outPacket =
-                DatagramUtility.getDatagramPacket(message, ai.address, ai.port);
-        try {
-            socket.send(outPacket);
-        } catch (IOException e) {
-            e.printStackTrace();
-        }
-    }
-
     @Override
     public void run() {
         try {
@@ -107,7 +84,7 @@ public class UDPChatServer implements Runnable {
     }
 
     public static void main(String[] args) {
-        UDPChatServer server = new UDPChatServer();
+        UDPServer server = new UDPServer();
         server.start();
         server.registerListener(System.out::println);
     }

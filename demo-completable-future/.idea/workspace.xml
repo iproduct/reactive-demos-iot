@@ -2,9 +2,37 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c3fc2a3c-a6aa-447d-83b7-d70a9f9713ec" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/../.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../LICENSE" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../README.md" beforeDir="false" />
+      <change afterPath="$PROJECT_DIR$/../demo-callback/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/iproduct/iot/demo/udp/UDPServer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../demo-reactor/.idea/libraries/Gradle__com_googlecode_json_simple_json_simple_1_1_1.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../demo-reactor/.idea/modules/demo-reactor.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../demo-reactor/.idea/modules/demo-reactor_main.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../demo-reactor/.idea/modules/demo-reactor_test.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../demo-reactor/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../demo-reactor/src/main/java/org/iproduct/demos/spring/streamingdemos/ReactorDemo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../demo-reactor/src/main/java/org/iproduct/demos/spring/streamingdemos/udp/AddressInfo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../demo-reactor/src/main/java/org/iproduct/demos/spring/streamingdemos/udp/DatagramUtility.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../demo-reactor/src/main/java/org/iproduct/demos/spring/streamingdemos/udp/EventListener.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../demo-reactor/src/main/resources/static/favicon.ico" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../demo-reactor/src/main/resources/static/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../demo-reactor/src/main/resources/static/js/stats.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../demo-reactor/src/main/resources/static/js/three.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../reactive-streaming-demos/.idea/modules/reactive-streaming-demos.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../reactive-streaming-demos/.idea/modules/reactive-streaming-demos_main.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../reactive-streaming-demos/.idea/modules/reactive-streaming-demos_test.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../demo-callback/.idea/.name" beforeDir="false" afterPath="$PROJECT_DIR$/../demo-callback/.idea/.name" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../demo-callback/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../demo-callback/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../demo-callback/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../demo-callback/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../demo-callback/src/main/java/org/iproduct/iot/demo/resources/IotResource.java" beforeDir="false" afterPath="$PROJECT_DIR$/../demo-callback/src/main/java/org/iproduct/iot/demo/resources/IotResource.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../demo-callback/src/main/java/org/iproduct/iot/demo/udp/UDPChatServer.java" beforeDir="false" afterPath="$PROJECT_DIR$/../demo-callback/src/main/java/org/iproduct/iot/demo/udp/UDPServer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../demo-callback/src/main/java/org/iproduct/iot/demo/udp/UDPServerFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/../demo-callback/src/main/java/org/iproduct/iot/demo/udp/UDPServerFactory.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/iproduct/iot/demo/jersey/BootstrapJersey.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/iproduct/iot/demo/jersey/BootstrapJersey.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/iproduct/iot/demo/resources/IotResource.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/iproduct/iot/demo/resources/IotResource.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/iproduct/iot/demo/resources/StaticResource.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/iproduct/iot/demo/resources/StaticResource.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/iproduct/iot/demo/udp/UDPChatServer.java" beforeDir="false" afterPath="$PROJECT_DIR$/../demo-reactor/src/main/java/org/iproduct/demos/spring/streamingdemos/udp/UDPServer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/iproduct/iot/demo/udp/UDPServerFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/iproduct/iot/demo/udp/UDPServerFactory.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/.gradle/" />
@@ -93,23 +121,33 @@
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
           <entry key="html" value="2" />
-          <entry key="java" value="1" />
+          <entry key="java" value="9" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
           <entry key="HTML" value="2" />
-          <entry key="JAVA" value="1" />
+          <entry key="JAVA" value="9" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.extensions.open">
+        <counts>
+          <entry key="gradle" value="1" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.types.open">
+        <counts>
+          <entry key="Groovy" value="1" />
         </counts>
       </usages-collector>
     </session>
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/resources/static/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="84">
+            <state relative-caret-position="-1038">
               <caret line="79" column="54" selection-start-line="79" selection-start-column="54" selection-end-line="79" selection-end-column="54" />
             </state>
           </provider>
@@ -125,22 +163,19 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/org/iproduct/iot/demo/udp/UDPChatServer.java">
+        <entry file="file://$PROJECT_DIR$/src/main/java/org/iproduct/iot/demo/udp/UDPServer.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="2420">
-              <caret line="140" column="47" selection-start-line="140" selection-start-column="47" selection-end-line="140" selection-end-column="47" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
+            <state relative-caret-position="-106">
+              <caret line="50" selection-start-line="50" selection-end-line="50" />
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/org/iproduct/iot/demo/jersey/BootstrapJersey.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="366">
-              <caret line="28" selection-start-line="28" selection-end-line="28" />
+            <state relative-caret-position="234">
+              <caret line="32" column="29" selection-start-line="32" selection-start-column="29" selection-end-line="32" selection-end-column="29" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -152,7 +187,7 @@
         <entry file="file://$PROJECT_DIR$/src/main/java/org/iproduct/iot/demo/resources/StaticResource.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="594">
-              <caret line="41" column="119" selection-start-line="41" selection-start-column="119" selection-end-line="41" selection-end-column="119" />
+              <caret line="32" column="119" selection-start-line="32" selection-start-column="119" selection-end-line="32" selection-end-column="119" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -163,11 +198,21 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/org/iproduct/iot/demo/resources/IotResource.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1254">
-              <caret line="84" column="68" selection-start-line="84" selection-start-column="68" selection-end-line="84" selection-end-column="68" />
+            <state relative-caret-position="696">
+              <caret line="78" column="39" selection-start-line="56" selection-start-column="23" selection-end-line="84" selection-end-column="50" />
               <folding>
-                <element signature="imports" expanded="true" />
+                <element signature="e#1087#1088#0" expanded="true" />
+                <element signature="e#1125#1126#0" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/build.gradle">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="279">
+              <caret line="37" selection-start-line="37" selection-end-line="37" selection-end-column="58" />
             </state>
           </provider>
         </entry>
@@ -636,10 +681,11 @@
         <option value="$PROJECT_DIR$/src/main/resources/static/three.js" />
         <option value="$PROJECT_DIR$/src/main/java/org/iproduct/iot/demo/resources/StaticResource.java" />
         <option value="$PROJECT_DIR$/src/main/java/org/iproduct/iot/demo/udp/UDPChatServer.java" />
-        <option value="$PROJECT_DIR$/src/main/java/org/iproduct/iot/demo/resources/IotResource.java" />
         <option value="$PROJECT_DIR$/src/main/resources/static/js/stats.min.js" />
         <option value="$PROJECT_DIR$/src/main/resources/static/index.html" />
         <option value="$PROJECT_DIR$/src/main/java/org/iproduct/iot/demo/jersey/BootstrapJersey.java" />
+        <option value="$PROJECT_DIR$/src/main/java/org/iproduct/iot/demo/udp/UDPServer.java" />
+        <option value="$PROJECT_DIR$/src/main/java/org/iproduct/iot/demo/resources/IotResource.java" />
       </list>
     </option>
   </component>
@@ -747,8 +793,8 @@
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1542337001200" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../demo-callback" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1542343557573" />
+    <property name="last_opened_file_path" value="D:/CourseSpring/git/course-spring5/12-webflux-boot-rabbitmq" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="project.structure.last.edited" value="Modules" />
@@ -811,8 +857,8 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="UDPChatServer" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="org.iproduct.iot.demo.udp.UDPChatServer" />
+    <configuration name="UDPServer" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="org.iproduct.iot.demo.udp.UDPServer" />
       <module name="iot-demo-completable-future_main" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
       <extension name="coverage">
@@ -865,14 +911,14 @@
     </configuration>
     <list>
       <item itemvalue="Application.UDPChatClient" />
-      <item itemvalue="Application.UDPChatServer" />
+      <item itemvalue="Application.UDPServer" />
       <item itemvalue="Application.BootstrapJersey" />
       <item itemvalue="Gradle.reactive-demos-iot [dependencies]" />
     </list>
     <recent_temporary>
       <list>
         <item itemvalue="Application.BootstrapJersey" />
-        <item itemvalue="Application.UDPChatServer" />
+        <item itemvalue="Application.UDPServer" />
         <item itemvalue="Gradle.reactive-demos-iot [dependencies]" />
         <item itemvalue="Application.UDPChatClient" />
       </list>
@@ -894,18 +940,18 @@
       <workItem from="1542148531050" duration="19681000" />
       <workItem from="1542280188134" duration="2535000" />
       <workItem from="1542315913029" duration="19395000" />
-      <workItem from="1542336023348" duration="1024000" />
+      <workItem from="1542336023348" duration="5991000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="71420000" />
+    <option name="totallyTimeSpent" value="76387000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1721" height="935" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.24984948" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.24984948" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="Image Layers" order="3" />
@@ -915,7 +961,7 @@
       <window_info anchor="bottom" id="Java Enterprise" order="0" />
       <window_info anchor="bottom" id="Message" order="1" />
       <window_info anchor="bottom" id="Find" order="2" weight="0.32876712" />
-      <window_info active="true" anchor="bottom" id="Run" order="3" visible="true" weight="0.31631383" />
+      <window_info anchor="bottom" id="Run" order="3" visible="true" weight="0.31631383" />
       <window_info anchor="bottom" id="Debug" order="4" weight="0.39975095" />
       <window_info anchor="bottom" id="Cvs" order="5" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="6" weight="0.4" />
@@ -1103,13 +1149,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/build.gradle">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="190">
-          <caret line="37" column="58" selection-start-line="37" selection-start-column="58" selection-end-line="37" selection-end-column="58" />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://C:/Program Files/Java/jdk1.8.0_181/src.zip!/java/lang/Class.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="569">
@@ -1149,30 +1188,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/org/iproduct/iot/demo/udp/UDPChatServer.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2420">
-          <caret line="140" column="47" selection-start-line="140" selection-start-column="47" selection-end-line="140" selection-end-column="47" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/org/iproduct/iot/demo/resources/StaticResource.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="594">
-          <caret line="41" column="119" selection-start-line="41" selection-start-column="119" selection-end-line="41" selection-end-column="119" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/org/iproduct/iot/demo/resources/IotResource.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1254">
-          <caret line="84" column="68" selection-start-line="84" selection-start-column="68" selection-end-line="84" selection-end-column="68" />
+          <caret line="32" column="119" selection-start-line="32" selection-start-column="119" selection-end-line="32" selection-end-column="119" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -1190,20 +1209,45 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/static/index.html">
+    <entry file="file://$PROJECT_DIR$/src/main/java/org/iproduct/iot/demo/udp/UDPServer.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="84">
-          <caret line="79" column="54" selection-start-line="79" selection-start-column="54" selection-end-line="79" selection-end-column="54" />
+        <state relative-caret-position="-106">
+          <caret line="50" selection-start-line="50" selection-end-line="50" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/org/iproduct/iot/demo/jersey/BootstrapJersey.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="366">
-          <caret line="28" selection-start-line="28" selection-end-line="28" />
+        <state relative-caret-position="234">
+          <caret line="32" column="29" selection-start-line="32" selection-start-column="29" selection-end-line="32" selection-end-column="29" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/org/iproduct/iot/demo/resources/IotResource.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="696">
+          <caret line="78" column="39" selection-start-line="56" selection-start-column="23" selection-end-line="84" selection-end-column="50" />
+          <folding>
+            <element signature="e#1087#1088#0" expanded="true" />
+            <element signature="e#1125#1126#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/build.gradle">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="279">
+          <caret line="37" selection-start-line="37" selection-end-line="37" selection-end-column="58" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/static/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1038">
+          <caret line="79" column="54" selection-start-line="79" selection-start-column="54" selection-end-line="79" selection-end-column="54" />
         </state>
       </provider>
     </entry>

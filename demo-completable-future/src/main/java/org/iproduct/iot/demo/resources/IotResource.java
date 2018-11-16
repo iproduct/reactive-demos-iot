@@ -1,15 +1,12 @@
 package org.iproduct.iot.demo.resources;
 
-import org.iproduct.iot.demo.jersey.BootstrapJersey;
 import org.iproduct.iot.demo.udp.EventListener;
-import org.iproduct.iot.demo.udp.UDPChatServer;
+import org.iproduct.iot.demo.udp.UDPServer;
 import org.iproduct.iot.demo.udp.UDPServerFactory;
-import org.json.simple.JSONArray;
 import org.json.simple.JSONObject;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
-import javax.inject.Inject;
 import javax.ws.rs.GET;
 import javax.ws.rs.Path;
 import javax.ws.rs.Produces;
@@ -18,17 +15,12 @@ import javax.ws.rs.core.MediaType;
 import javax.ws.rs.sse.OutboundSseEvent;
 import javax.ws.rs.sse.Sse;
 import javax.ws.rs.sse.SseEventSink;
-import java.io.IOException;
-import java.util.concurrent.CompletableFuture;
-import java.util.concurrent.ExecutorService;
-import java.util.concurrent.Executors;
-import java.util.stream.Stream;
 
 @Path("api")
 public class IotResource {
     private static final Logger log = LoggerFactory.getLogger(IotResource.class);
 
-    private UDPChatServer server = UDPServerFactory.getServer();
+    private UDPServer server = UDPServerFactory.getServer();
 
     @GET
     @Path("hello")
@@ -39,22 +31,20 @@ public class IotResource {
     @GET
     @Path("events-text")
     @Produces(MediaType.SERVER_SENT_EVENTS)
-    public void eventTextStream(@Context SseEventSink eventSink, @Context Sse sse) {
-        server.registerListener(new EventListener<String>() {
-            @Override
-            public void onEvent(String eventPayload) {
-
-                final OutboundSseEvent event = sse.newEventBuilder()
-                        .name("iot-event")
-                        .data(String.class, eventPayload)
-                        .build();
-                if (!eventSink.isClosed()) {
-                    eventSink.send(event);
-                } else {
-                    server.removeListener(this);
-                }
-            }
-        });
+    public void eventJsonStreamAsync(@Context SseEventSink eventSink, @Context Sse sse) {
+        while(!eventSink.isClosed()) {
+            server.getCurrentEvent()
+                    .thenApply(payload ->
+                            sse.newEventBuilder()
+                                    .name("iot-event")
+                                    .data(String.class, payload)
+                                    .build()
+                    ).thenAccept(event -> eventSink.send(event))
+                    .exceptionally(ex -> {
+                        log.error("Error:", ex);
+                        return null;
+                    }).join();
+        }
     }
 
     @GET
@@ -107,22 +97,4 @@ public class IotResource {
         }
     }
 
-    @GET
-    @Path("events-json-async")
-    @Produces(MediaType.SERVER_SENT_EVENTS)
-    public void eventJsonStreamAsync(@Context SseEventSink eventSink, @Context Sse sse) {
-        while(!eventSink.isClosed()) {
-            server.getCurrentEvent()
-                    .thenApply(payload ->
-                            sse.newEventBuilder()
-                                    .name("iot-event")
-                                    .data(String.class, payload)
-                                    .build()
-                    ).thenAccept(event -> eventSink.send(event))
-                    .exceptionally(ex -> {
-                        log.error("Error:", ex);
-                        return null;
-                    }).join();
-        }
-    }
 }

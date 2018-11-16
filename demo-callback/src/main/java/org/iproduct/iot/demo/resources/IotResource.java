@@ -1,15 +1,11 @@
 package org.iproduct.iot.demo.resources;
 
-import org.iproduct.iot.demo.jersey.BootstrapJersey;
 import org.iproduct.iot.demo.udp.EventListener;
-import org.iproduct.iot.demo.udp.UDPChatServer;
+import org.iproduct.iot.demo.udp.UDPServer;
 import org.iproduct.iot.demo.udp.UDPServerFactory;
-import org.json.simple.JSONArray;
-import org.json.simple.JSONObject;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
-import javax.inject.Inject;
 import javax.ws.rs.GET;
 import javax.ws.rs.Path;
 import javax.ws.rs.Produces;
@@ -18,17 +14,12 @@ import javax.ws.rs.core.MediaType;
 import javax.ws.rs.sse.OutboundSseEvent;
 import javax.ws.rs.sse.Sse;
 import javax.ws.rs.sse.SseEventSink;
-import java.io.IOException;
-import java.util.concurrent.CompletableFuture;
-import java.util.concurrent.ExecutorService;
-import java.util.concurrent.Executors;
-import java.util.stream.Stream;
 
 @Path("api")
 public class IotResource {
     private static final Logger log = LoggerFactory.getLogger(IotResource.class);
 
-    private UDPChatServer server = UDPServerFactory.getServer();
+    private UDPServer server = UDPServerFactory.getServer();
 
     @GET
     @Path("hello")
