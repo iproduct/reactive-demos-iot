@@ -3,10 +3,15 @@ package org.iproduct.demos.spring.streamingdemos;
 import reactor.core.publisher.EmitterProcessor;
 import reactor.core.publisher.Flux;
 import reactor.core.publisher.FluxSink;
+import reactor.core.publisher.Mono;
 import reactor.core.scheduler.Schedulers;
 
 import java.time.Duration;
+import java.util.List;
+import java.util.concurrent.CompletableFuture;
 import java.util.concurrent.atomic.AtomicLong;
+import java.util.stream.Collectors;
+import java.util.stream.Stream;
 
 public class ReactorDemo {
 
@@ -18,12 +23,14 @@ public class ReactorDemo {
 //                .filter(s -> s.startsWith("HELLO"))
 //                .delayElements(Duration.of(1000, MILLIS));
         flux.subscribe(data -> System.out.println("Subscriber 1:" + data));
-        Flux.just("Hello World!", "Goodbye World!", "Hello Trayan!")
-            .zipWith(Flux.interval(Duration.ofMillis(1000)))
-            .map(tuple -> tuple.getT1())
-            .subscribe( sink::next); // emit - non blocking
-        sink.next("Initial message.");
 
+        Flux.just("Hello World!", "Goodbye World!", "Hello Trayan!")
+                .zipWith(Flux.interval(Duration.ofMillis(1000)))
+                .map(tuple -> tuple.getT1())
+                .subscribe(sink::next);
+
+        sink.next("Initial message."); // emit - non blocking
+//
         Thread.sleep(1500);
         flux.subscribe(data -> System.out.println("Subscriber 2:" + data));
 
@@ -70,6 +77,4 @@ public class ReactorDemo {
 
         Thread.sleep(4000);
     }
-
-
 }

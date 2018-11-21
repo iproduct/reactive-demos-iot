@@ -2,11 +2,16 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="7f7f8968-8f8b-4bb3-8491-8e2dd76e61f9" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/modules/reactive-streaming-demos.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules/reactive-streaming-demos_main.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules/reactive-streaming-demos_test.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../demo-callback/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../demo-callback/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../demo-completable-future/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../demo-completable-future/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../demo-completable-future/src/main/resources/static/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/../demo-completable-future/src/main/resources/static/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../demo-completable-future/src/main/resources/static/js/three.js" beforeDir="false" afterPath="$PROJECT_DIR$/../demo-completable-future/src/main/resources/static/js/three.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../demo-reactor/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../demo-reactor/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../demo-reactor/out/production/classes/org/iproduct/demos/spring/streamingdemos/ReactorDemo.class" beforeDir="false" afterPath="$PROJECT_DIR$/../demo-reactor/out/production/classes/org/iproduct/demos/spring/streamingdemos/ReactorDemo.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../demo-reactor/src/main/java/org/iproduct/demos/spring/streamingdemos/ReactorDemo.java" beforeDir="false" afterPath="$PROJECT_DIR$/../demo-reactor/src/main/java/org/iproduct/demos/spring/streamingdemos/ReactorDemo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/4.8/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/4.8/fileHashes/fileHashes.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules/reactive-streaming-demos_test.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules/reactive-streaming-demos_test.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.gradle/" />
     <ignored path="$PROJECT_DIR$/build/" />
@@ -54,9 +59,10 @@
     <session id="-943148890">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="1" />
-          <entry key="project.open.time.0" value="1" />
-          <entry key="project.opened" value="1" />
+          <entry key="project.closed" value="2" />
+          <entry key="project.open.time.0" value="2" />
+          <entry key="project.open.time.2" value="1" />
+          <entry key="project.opened" value="3" />
         </counts>
       </usages-collector>
     </session>
@@ -150,7 +156,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/resources/static/javascripts/custom.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="459">
+            <state relative-caret-position="682">
               <caret line="31" column="14" selection-start-line="31" selection-start-column="14" selection-end-line="31" selection-end-column="14" />
             </state>
           </provider>
@@ -391,6 +397,7 @@
     </option>
     <option name="modificationStamps">
       <map>
+        <entry key="$PROJECT_DIR$" value="3084657878044" />
         <entry key="$PROJECT_DIR$/.gradle" value="0" />
         <entry key="$PROJECT_DIR$/build.gradle" value="3541327949" />
       </map>
@@ -440,6 +447,7 @@
         <entry key="$PROJECT_DIR$/../../../Workspace/webflux-demo" value="PREVIEW" />
         <entry key="$PROJECT_DIR$/../../pro-spring-5" value="PREVIEW" />
         <entry key="$PROJECT_DIR$/../10-webmvc-serice-jpa" value="PREVIEW" />
+        <entry key="$PROJECT_DIR$" value="RE_IMPORT" />
         <entry key="$PROJECT_DIR$/../webflux-demo" value="PREVIEW" />
         <entry key="$PROJECT_DIR$/../webflux-users" value="PREVIEW" />
         <entry key="$PROJECT_DIR$/../webflux-users-stopper" value="PREVIEW" />
@@ -595,8 +603,8 @@
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1542337798326" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../demo-reactor" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1542367337112" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="project.structure.last.edited" value="Project" />
     <property name="project.structure.proportion" value="0.15728477" />
     <property name="project.structure.side.proportion" value="0.23772103" />
@@ -693,6 +701,8 @@
       <updated>1527398537441</updated>
       <workItem from="1542320172663" duration="2077000" />
       <workItem from="1542337572563" duration="290000" />
+      <workItem from="1542363898055" duration="586000" />
+      <workItem from="1542664442152" duration="1199000" />
     </task>
     <task id="LOCAL-00001" summary="reactive webflux demo - user management with security added">
       <created>1527399441835</created>
@@ -705,12 +715,13 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="2367000" />
+    <option name="totallyTimeSpent" value="4152000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1721" height="935" extended-state="6" />
+    <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.25526792" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.22576761" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -767,6 +778,13 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="198">
           <caret line="13" column="21" selection-start-line="13" selection-start-column="21" selection-end-line="13" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/org/iproduct/demos/spring/streamingdemos/ReactiveStreamingDemosApp.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="286">
+          <caret line="27" selection-start-line="27" selection-end-line="27" />
         </state>
       </provider>
     </entry>
@@ -831,15 +849,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/resources/static/javascripts/custom.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="459">
+        <state relative-caret-position="682">
           <caret line="31" column="14" selection-start-line="31" selection-start-column="14" selection-end-line="31" selection-end-column="14" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/org/iproduct/demos/spring/streamingdemos/ReactiveStreamingDemosApp.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="286">
-          <caret line="27" selection-start-line="27" selection-end-line="27" />
         </state>
       </provider>
     </entry>
